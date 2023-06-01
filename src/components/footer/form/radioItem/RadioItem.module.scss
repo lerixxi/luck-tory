@@ -1,0 +1,81 @@
+.radioLabel {
+   @include flex(_, center);
+   gap: 30px;
+   @include text();
+   cursor: pointer;
+
+   input {
+      position: relative;
+      height: 20px;
+      width: 20px;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+
+      cursor: pointer;
+
+      @include media("md-tablet") {
+         height: 18px;
+         width: 18px;
+      }
+
+      @include media("xl-desktop") {
+         height: 15px;
+         width: 15px;
+      }
+   }
+
+   input::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      width: 30px;
+      height: 30px;
+
+      background-color: transparent;
+      border-radius: 50%;
+      border: 2px solid $primary-accent-color;
+
+      @include media("md-tablet") {
+         width: 34px;
+         height: 34px;
+      }
+
+      @include media("xl-desktop") {
+         width: 30px;
+         height: 30px;
+      }
+   }
+
+   input:checked::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      background-color: $primary-accent-color;
+      visibility: visible;
+
+      @include media("md-tablet") {
+         left: 95%;
+         width: 17px;
+         height: 17px;
+      }
+
+      @include media("xl-desktop") {
+         left: 100%;
+         width: 15px;
+         height: 15px;
+      }
+   }
+}

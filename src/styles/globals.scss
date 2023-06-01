@@ -5,8 +5,10 @@ html {
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
-
   font-weight: 400;
+
+
+
 
   /* Выставляем основные настройки по-умолчанию для body */
   min-height: 100vh;
@@ -98,6 +100,7 @@ select {
 
 button {
   margin: 0;
+  cursor: pointer;
 }
 
 
@@ -117,17 +120,36 @@ button {
   margin: 0px auto;
   padding: 0px 15px;
   width: 100%;
-  max-width: 500px;
+  max-width: $sm-tablet;
 
 
-  @include media("tablet") {
+  // @media screen and (min-width: $md-tablet) {
+  //   padding: 0px 24px;
+  //   max-width: $md-tablet;
+  // }
+
+  // @media screen and (min-width: $xl-desktop) {
+  //   padding: 0px 30px;
+  //   max-width: $xl-desktop;
+  // }
+
+  // @media screen and (min-width: $xxl-desktop) {
+  //   padding: 0px 40px;
+  //   max-width: $xxl-desktop;
+  // }
+
+  @include media("md-tablet") {
+    padding: 0px 24px;
+    max-width: $md-tablet;
+  }
+
+  @include media("xl-desktop") {
     padding: 0px 30px;
-    max-width: none;
-    width: $tablet;
+    max-width: $xl-desktop;
+  }
 
-    @include media("desktop") {
-      padding: 0px 100px;
-      width: $desktop;
-    }
+  @include media("xxl-desktop") {
+    padding: 0px 40px;
+    max-width: $xxl-desktop;
   }
 }

@@ -1,0 +1,78 @@
+.box {
+   @include flex(center, center);
+   gap: 10px;
+   padding: 20px;
+
+   button {
+      @include flex(center, center);
+      color: $secondary-text-color;
+      background-color: transparent;
+      border-radius: 10px;
+      border: none;
+
+      svg {
+         width: 20px;
+         height: 20px;
+         fill: $secondary-accent-color;
+         transition: $transition;
+
+         &:hover,
+         &:focus {
+            fill: $primary-accent-color;
+            transform: scale(1.15);
+         }
+
+         @include media('md-tablet') {
+            width: 25px;
+            height: 25px;
+         }
+
+         @include media('xl-desktop') {
+            font-size: 30px;
+         }
+      }
+   }
+
+   .testimonialsList {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @include media("md-tablet") {
+         grid-template-columns: repeat(2, 1fr);
+         align-items: start;
+      }
+
+      @include media("xl-desktop") {
+
+         grid-template-columns: repeat(3, 1fr);
+         grid-column-gap: 30px;
+
+      }
+
+      li {
+         @include flex(center, center);
+         flex-direction: column;
+         gap: 20px;
+         padding: 10px;
+
+         img {
+            width: 50%;
+            height: auto;
+            border-radius: 50%;
+         }
+
+         p {
+            @include text();
+            text-align: center;
+         }
+
+         h3 {
+            @include h3();
+         }
+
+
+
+      }
+
+   }
+}

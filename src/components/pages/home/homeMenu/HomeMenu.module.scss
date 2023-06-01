@@ -1,0 +1,73 @@
+.section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   color: $accent-text-color;
+
+   .container {
+      h2 {
+         @include h2();
+      }
+
+      ul {
+         @include flex(center, center);
+         flex-direction: column;
+         gap: 50px;
+
+         @include media('md-tablet') {
+            flex-direction: row;
+            align-items: stretch;
+            gap: 20px;
+         }
+      }
+
+      li {
+         @include flex(center, center);
+         flex-direction: column;
+         gap: 30px;
+         padding: 30px;
+         width: calc(100% - 5px);
+
+         @include text();
+         background-color: $secondary-bg-color;
+         border-radius: 5%;
+      }
+
+      img {
+         width: 50%;
+         height: auto;
+         border-radius: 5%;
+
+         @include media('md-tablet') {
+            width: 100%;
+         }
+      }
+
+      div {
+         flex-grow: 2;
+
+         h3 {
+            @include h3();
+         }
+      }
+
+      a {
+         @include btn();
+         width: 100%;
+         color: $primary-bg-color;
+         background-color: $secondary-accent-color;
+         // border: 1px solid $accent-text-color;
+         // color: $accent-text-color;
+
+         &:hover,
+         &:focus {
+            background-color: $secondary-text-color ;
+            color: $secondary-accent-color;
+            box-shadow: $box-shadow;
+            // background-color: #7272b896;
+            // border-color: rgba(255, 255, 255, 0.7);
+
+         }
+      }
+
+   }
+}

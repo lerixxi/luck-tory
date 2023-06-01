@@ -1,0 +1,113 @@
+.form {
+   @include flex(center, flex-start);
+   flex-direction: column;
+
+   @include media("md-tablet") {
+      max-width: 564px;
+      margin: 0 auto;
+   }
+
+   @include media("xl-desktop") {
+      max-width: 630px;
+   }
+
+   .radioList {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      margin-bottom: 30px;
+
+   }
+
+   .labelBox {
+      margin-bottom: 40px;
+
+      @include media("xl-desktop") {
+         @include flex(center, center);
+         gap: 10px;
+      }
+
+      label {
+         position: relative;
+         @include flex(center, center);
+         gap: 5px;
+         margin-bottom: 20px;
+
+         @include text();
+         font-weight: 500;
+      }
+
+      input {
+         width: 100%;
+         padding: 5px;
+
+         background: transparent;
+         outline: none;
+         border: none;
+         border-bottom: 2px solid $primary-accent-color;
+
+         color: $primary-accent-color;
+         font-weight: 500;
+         @include text();
+
+      }
+   }
+
+   .error {
+      position: absolute;
+      bottom: 7px;
+      left: 64px;
+
+      color: rgb(135, 43, 43);
+      font-size: 12px;
+      transform: translateY(170%);
+
+      @include media("md-tablet") {
+         font-size: 15px;
+      }
+
+      @include media("xl-desktop") {
+         left: 0;
+         font-size: 12px;
+      }
+   }
+
+   button {
+      @include btn();
+      width: 100%;
+
+      color: $secondary-text-color;
+      background-color: $primary-accent-color;
+      border-radius: 10px;
+      border: none;
+
+      &:hover,
+      &:focus {
+         background-color: $secondary-text-color ;
+         color: $primary-accent-color;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      @include media('xl-desktop') {
+         width: 50%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
+
+   .successBox {
+      position: relative;
+      width: 100%;
+   }
+
+   .successText {
+      position: absolute;
+      margin-top: 20px;
+
+      color: $primary-accent-color;
+
+      @include text();
+      text-align: center;
+   }
+}

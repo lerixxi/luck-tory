@@ -1,0 +1,25 @@
+.section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   color: $accent-text-color;
+
+   background: linear-gradient(31deg, rgba(249, 249, 249, 0.12) 51%, rgba(209, 175, 248, 0.16) 59%, rgba(245, 245, 245, 0.21) 74%, rgba(216, 202, 249, 0.06) 87%), url('/images/homePage/testimonial3.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+   .container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      background-color: $secondary-bg-color;
+      border-radius: 5%;
+   }
+
+   h2 {
+      @include h2();
+   }
+}

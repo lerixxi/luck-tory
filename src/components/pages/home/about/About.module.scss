@@ -1,0 +1,44 @@
+.section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   color: $accent-text-color;
+
+   .list {
+      @include flex(center, center);
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      @include media("md-tablet") {
+         flex-direction: row;
+         align-items: start;
+      }
+   }
+
+   .video {
+      width: 250px;
+      height: 350px;
+      background-color: #ece5a7;
+   }
+
+   img {
+      width: 250px;
+      height: 350px;
+   }
+
+   h2 {
+      @include h2();
+
+      @include media("md-tablet") {
+         text-align: start;
+      }
+   }
+
+   .text {
+      margin-bottom: 20px;
+   }
+
+   p {
+      @include text();
+   }
+
+}

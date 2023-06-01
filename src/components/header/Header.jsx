@@ -1,31 +1,43 @@
-import Link from "next/link";
-import { navbar } from "@/data/header";
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Navbar } from "./navbar/Navbar";
+
+import styles from "./Header.module.scss";
 
 export const Header = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.pageYOffset;
+			setIsScrolled(scrollTop > 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<header>
-			<div>
-				<Link href="/">
-					<p>Luck Tory</p>
+		<header
+			className={`${styles.header} ${
+				isScrolled ? styles.transparent : ""
+			}`}
+		>
+			<div className={`container ${styles.container}`}>
+				<Link className={styles.logoLink} href="/">
+					<p className={styles.logoText}>Luck Tory</p>
 					<Image
 						src="/images/logo.png"
 						alt="logo"
 						width={50}
 						height={50}
+						className={styles.logoImg}
 					/>
 				</Link>
-				<nav>
-					<ul>
-						{navbar.map((el) => (
-							<li key={el}>
-								<Link href={`#${el}`} scroll={false}>
-									{el}
-								</Link>
-							</li>
-						))}
-					</ul>
-				</nav>
+				<Navbar />
 			</div>
 		</header>
 	);

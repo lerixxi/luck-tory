@@ -1,0 +1,97 @@
+@include media("sm-mobile") {}
+
+@include media("sm-tablet") {}
+
+@include media("md-tablet") {}
+
+@include media("xl-desktop") {}
+
+@include media("xxl-desktop") {}
+
+.footer {
+   padding-top: 50px;
+   padding-bottom: 100px;
+   color: $accent-text-color;
+
+   .container {
+      @include flex(space-between, center);
+      flex-direction: column;
+      gap: 20px;
+
+      @include media("md-tablet") {
+         flex-direction: row;
+         align-items: flex-start;
+      }
+
+
+      .contactsBox {
+         padding: 30px;
+
+         h2 {
+            @include h2();
+
+            @include media("md-tablet") {
+               text-align: start;
+            }
+         }
+
+         .contactsList {
+
+            li {
+               @include flex();
+               gap: 10px;
+
+               p {
+                  @include text();
+
+                  svg {
+                     fill: $primary-accent-color;
+                  }
+               }
+            }
+
+            .iconsBox {
+               margin-top: 20px;
+               @include flex(center, center);
+               flex-direction: column;
+
+               @include media("md-tablet") {
+                  align-items: flex-start;
+               }
+
+               ul {
+                  @include flex();
+                  gap: 20px;
+               }
+
+               a {
+                  color: $primary-accent-color;
+                  transition: $transition;
+
+                  &:hover,
+                  &:focus {
+                     transform: scale(1.15);
+
+                  }
+               }
+
+               svg {
+                  width: 30px;
+                  height: 30px;
+               }
+            }
+         }
+      }
+
+
+      .formBox {
+         padding: 30px;
+         background-color: $secondary-bg-color;
+         border-radius: 5%;
+
+         h2 {
+            @include h2();
+         }
+      }
+   }
+}
