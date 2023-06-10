@@ -144,12 +144,14 @@ button {
   }
 
   @include media("xl-desktop") {
-    padding: 0px 30px;
+    // padding: 0px 30px;
+    padding: 0px 50px;
     max-width: $xl-desktop;
   }
 
   @include media("xxl-desktop") {
-    padding: 0px 40px;
+    // padding: 0px 40px;
+    padding: 0px 70px;
     max-width: $xxl-desktop;
   }
 }

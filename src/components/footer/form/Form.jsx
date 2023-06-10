@@ -115,9 +115,7 @@ export const Form = () => {
 
 			{isSubmitSuccessful && (
 				<div className={styles.successBox}>
-					<p className={styles.successText}>
-						Данные успешно отправлены
-					</p>
+					<p className={styles.successText}>Дані успішно надіслано</p>
 				</div>
 			)}
 		</form>

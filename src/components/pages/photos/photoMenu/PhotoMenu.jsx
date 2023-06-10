@@ -33,7 +33,7 @@ export const PhotoMenu = () => {
 									width={width}
 									height={height}
 								/>
-								<div>
+								<div className={styles.descriptionBox}>
 									<p className={` ${montserrat.className}`}>
 										{description}
 									</p>
