@@ -6,33 +6,7 @@
 
 
    button {
-      @include flex(center, center);
-      color: $secondary-text-color;
-      background-color: transparent;
-      border-radius: 10px;
-      border: none;
-
-      svg {
-         width: 20px;
-         height: 20px;
-         fill: $secondary-accent-color;
-         transition: $transition;
-
-         &:hover,
-         &:focus {
-            fill: $primary-accent-color;
-            transform: scale(1.15);
-         }
-
-         @include media('md-tablet') {
-            width: 25px;
-            height: 25px;
-         }
-
-         @include media('xl-desktop') {
-            font-size: 30px;
-         }
-      }
+      @include arrowBtn();
    }
 
    .testimonialsList {
