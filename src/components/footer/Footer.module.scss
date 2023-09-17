@@ -28,6 +28,7 @@
          padding: 30px;
 
          h2 {
+            margin-bottom: 20px;
             @include h2();
 
             @include media("md-tablet") {
@@ -36,13 +37,19 @@
          }
 
          .contactsList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
 
             li {
-               @include flex();
+               display: flex;
+               align-items: center;
                gap: 10px;
 
                p {
-                  @include text();
+                  display: flex;
+                  align-items: center;
+                  font-size: 20px;
 
                   svg {
                      fill: $primary-accent-color;
@@ -51,7 +58,7 @@
             }
 
             .iconsBox {
-               margin-top: 20px;
+               margin-top: 30px;
                @include flex(center, center);
                flex-direction: column;
 
@@ -61,7 +68,7 @@
 
                ul {
                   @include flex();
-                  gap: 20px;
+                  gap: 30px;
                }
 
                a {
@@ -76,8 +83,8 @@
                }
 
                svg {
-                  width: 30px;
-                  height: 30px;
+                  width: 40px;
+                  height: 40px;
                }
             }
          }
@@ -87,9 +94,11 @@
       .formBox {
          padding: 30px;
          background-color: $secondary-bg-color;
-         border-radius: 5%;
+         border-radius: 20px;
+         box-shadow: $box-shadow;
 
          h2 {
+            margin-bottom: 20px;
             @include h2();
          }
       }

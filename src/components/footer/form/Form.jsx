@@ -61,15 +61,9 @@ export const Form = () => {
 
 			<div className={styles.labelBox}>
 				<label>
-					Ім&#39;я
+					Ім&#39;я:
 					<input
-						{...register("name", {
-							required: `Поле обов'язкове для заповнення`,
-							minLength: {
-								value: 3,
-								message: `Не менше 3 символів`,
-							},
-						})}
+						{...register("name")}
 						type="text"
 						aria-label="name"
 					/>
@@ -80,7 +74,7 @@ export const Form = () => {
 					)}
 				</label>
 				<label>
-					Номер
+					Номер:
 					<input
 						{...register("tel", {
 							required: `Поле обов'язкове для заповнення`,

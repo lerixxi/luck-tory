@@ -1,13 +1,3 @@
-@include media("sm-mobile") {}
-
-@include media("sm-tablet") {}
-
-@include media("md-tablet") {}
-
-@include media("xl-desktop") {}
-
-@include media("xxl-desktop") {}
-
 .hero {
    padding: 0 30px;
    height: 100vh;
@@ -61,7 +51,7 @@
    }
 
    h2 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       @include h2();
       font-weight: 400;
       text-align: left;

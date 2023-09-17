@@ -1,0 +1,61 @@
+.hero {
+    padding: 0 30px;
+    height: 100vh;
+    @include flex(center, center);
+
+    background: linear-gradient(rgba(207, 207, 207, 0.411),
+            rgba(0, 0, 0, 0.288)), url('/images/photosPage/8S1A5382.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: $secondary-text-color;
+
+    @include media('tablet') {
+        padding: 0 100px;
+        font-size: 70px;
+    }
+}
+
+.container {
+    @include flex(center, flex-start);
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+        // font-weight: 400;
+        text-transform: uppercase;
+
+        @include media('sm-mobile') {
+            font-size: 40px;
+        }
+
+        @include media('sm-tablet') {
+            font-size: 44px;
+        }
+
+        @include media("md-tablet") {
+            font-size: 50px;
+        }
+
+        // @include media("xl-desktop") {
+        //    font-size: 81px;
+        // }
+
+        // @include media("xxl-desktop") {
+        //    font-size: 86px;
+        // }
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        @include h2();
+        font-weight: 400;
+        text-align: left;
+    }
+}
+
+.photoSection {
+    padding: 50px;
+}

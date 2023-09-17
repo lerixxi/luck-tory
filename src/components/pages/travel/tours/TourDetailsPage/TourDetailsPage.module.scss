@@ -1,0 +1,150 @@
+.commonSection,
+.inclusionsSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    >a {
+        font-size: 18px;
+        font-weight: 600;
+        color: $secondary-accent-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.commonBox {
+    display: flex;
+    // align-items: center;
+}
+
+.commonInfo {
+    max-width: 70%;
+    padding-right: 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    border-right: 1px solid gray;
+}
+
+.bookBtn {
+    @include btn();
+    outline: none;
+    border: none;
+    width: 90%;
+    color: $primary-bg-color;
+    background-color: $secondary-accent-color;
+
+    &:hover,
+    &:active {
+        background-color: $secondary-text-color ;
+        color: $secondary-accent-color;
+        box-shadow: $box-shadow;
+    }
+}
+
+.commonDetailsBox {
+    padding: 40px;
+
+    >p {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 600;
+
+        >span {
+            margin-left: 10px;
+            font-weight: 400;
+        }
+    }
+
+    >p:nth-child(1) {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: $accent-text-color;
+    }
+
+    >button {
+        margin-top: 20px;
+        display: flex;
+    }
+}
+
+.daysSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $secondary-bg-color;
+}
+
+.daysList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.inclusionsBox {
+    margin-top: 30px;
+    display: flex;
+    gap: 160px;
+
+    h3 {
+
+        font-size: 24px;
+        color: rgba(102, 102, 102, 0.747);
+    }
+}
+
+.includeList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    >li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        >span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: $primary-accent-color;
+
+            >svg {
+                width: 20px;
+                height: 20px;
+                fill: #FFFFFF;
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.notIncludeList {
+
+    >li {
+
+        >span {
+            background-color: $beige-accent-color;
+
+            >svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

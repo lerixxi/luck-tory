@@ -1,0 +1,7 @@
+.customArrow {
+    @include arrowBtn();
+
+    &::before {
+        display: none;
+    }
+}

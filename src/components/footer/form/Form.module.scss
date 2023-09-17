@@ -56,12 +56,13 @@
 
    .error {
       position: absolute;
-      bottom: 7px;
-      left: 64px;
+      bottom: -25px;
+      right: 0;
 
+      display: inline-block;
+      text-align: right;
       color: rgb(135, 43, 43);
       font-size: 12px;
-      transform: translateY(170%);
 
       @include media("md-tablet") {
          font-size: 15px;

@@ -1,54 +1,28 @@
 .box {
-   @include flex(center, center);
    gap: 10px;
    padding-left: 20px;
    padding-right: 20px;
+}
 
-
-   button {
-      @include arrowBtn();
+.testimonialsList {
+   .slick-list {
+      display: flex;
+      gap: 10px;
    }
+}
 
-   .testimonialsList {
-      display: grid;
-      grid-template-columns: 1fr;
+.item {
+   outline: none;
+   padding: 0 30px;
+   display: flex !important;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+   text-align: center;
+}
 
-      @include media("md-tablet") {
-         grid-template-columns: repeat(2, 1fr);
-         align-items: start;
-      }
-
-      @include media("xl-desktop") {
-
-         grid-template-columns: repeat(3, 1fr);
-         grid-column-gap: 30px;
-
-      }
-
-      li {
-         @include flex(center, center);
-         flex-direction: column;
-         gap: 20px;
-         padding: 10px;
-
-         img {
-            width: 50%;
-            height: auto;
-            border-radius: 50%;
-         }
-
-         p {
-            @include text();
-            text-align: center;
-         }
-
-         h3 {
-            @include h3();
-         }
-
-
-
-      }
-
-   }
+.image {
+   width: 200px;
+   margin: auto;
+   border-radius: 50%;
 }

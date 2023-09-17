@@ -69,7 +69,7 @@
 
 //--------- --------- для заголовков секций в разных версиях экрана
 @mixin h2() {
-   margin-bottom: 20px;
+   // margin-bottom: 20px;
    font-size: 26px;
    text-align: center;
 
@@ -96,7 +96,7 @@
 
 
 @mixin h3() {
-   margin-bottom: 20px;
+   // margin-bottom: 20px;
    font-size: 18px;
    text-align: center;
 

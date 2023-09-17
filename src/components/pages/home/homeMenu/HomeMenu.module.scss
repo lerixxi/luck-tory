@@ -5,6 +5,7 @@
 
    .container {
       h2 {
+         margin-bottom: 20px;
          @include h2();
       }
 
@@ -26,16 +27,17 @@
          gap: 15px;
          padding: 25px;
          width: calc(100% - 5px);
+         box-shadow: $box-shadow;
 
          @include text();
          background-color: $secondary-bg-color;
-         border-radius: 5%;
+         border-radius: 20px;
       }
 
       img {
          width: 50%;
          height: auto;
-         border-radius: 5%;
+         border-radius: 10px;
 
          @include media('md-tablet') {
             width: 90%;
@@ -52,19 +54,16 @@
 
       a {
          @include btn();
+         margin-top: 10px;
          width: 100%;
          color: $primary-bg-color;
          background-color: $secondary-accent-color;
-         // border: 1px solid $accent-text-color;
-         // color: $accent-text-color;
 
          &:hover,
          &:focus {
             background-color: $secondary-text-color ;
             color: $secondary-accent-color;
             box-shadow: $box-shadow;
-            // background-color: #7272b896;
-            // border-color: rgba(255, 255, 255, 0.7);
 
          }
       }

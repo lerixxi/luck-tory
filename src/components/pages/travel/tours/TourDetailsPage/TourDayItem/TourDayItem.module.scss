@@ -1,0 +1,77 @@
+.daysItem {
+    >h3 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+
+        >span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+            background-color: $beige-accent-color;
+
+            >svg {
+                fill: #ffffff;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.isShowDaysInfo {
+
+    >h3 {
+        color: $primary-accent-color;
+
+        >span {
+            background-color: $primary-accent-color;
+        }
+    }
+
+    .daysInfoBox {
+        max-height: 2000px;
+        overflow: visible;
+        opacity: 1;
+    }
+
+}
+
+.daysInfoBox {
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-left: 60px;
+    transition: all 0.4s ease-in-out;
+}
+
+.daysText {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.daysImageBox {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.daysImage {
+    width: 30%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $box-shadow;
+    }
+}
