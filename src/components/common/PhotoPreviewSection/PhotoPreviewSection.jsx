@@ -2,6 +2,8 @@ import cn from "classnames";
 import React, { useState } from "react";
 import { Collection } from "./Collection/Collection";
 import styles from "./PhotoPreviewSection.module.scss";
+import { FiArrowLeft } from "react-icons/fi";
+import Link from "next/link";
 
 export const PhotoPreviewSection = ({ collection }) => {
   const [categoryName, setCategoryName] = useState("Усі");
@@ -16,6 +18,9 @@ export const PhotoPreviewSection = ({ collection }) => {
   return (
     <>
       <div className={cn("container", styles.wrapper)}>
+        <Link href="/photos" className={styles.backLink}>
+          <FiArrowLeft /> НАЗАД
+        </Link>
         <div className={styles.top}>
           <ul className={styles.list}>
             {category.map((item, idx) => (

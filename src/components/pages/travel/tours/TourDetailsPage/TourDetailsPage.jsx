@@ -1,9 +1,9 @@
 import cn from "classnames";
 import React, { useState } from "react";
-import { Hero } from "../../hero/Hero";
 import TourDayItem from "./TourDayItem/TourDayItem";
 import styles from "./TourDetailsPage.module.scss";
 import { BsCheck2, BsCheck2All, BsCheck2Circle, BsDashLg } from "react-icons/bs";
+import { Hero } from "@/components/common/hero/Hero";
 
 export const TourDetailsPage = ({ tour }) => {
   const {
@@ -20,18 +20,16 @@ export const TourDetailsPage = ({ tour }) => {
   } = tour;
 
   const isPlannedTour = status === "planned";
-  // const isPlannedTour = false;
 
   return (
     <>
-      <Hero urlImage={heroPhoto.url} />
+      <Hero background={heroPhoto.url} title={heroPhoto.title} description={heroPhoto.subtitle} />
       <section className={cn("container", styles.commonSection)} id="common">
         <div className={styles.nav}>
           <a href="#common">Общая информация</a>
           <a href="#days">Программа по дням</a>
           <a href="#inclusions">Что входит в стоимость</a>
           <a href="#common">Видео</a>
-          <a href="#common">Отзывы</a>
         </div>
 
         <div className={styles.commonBox}>

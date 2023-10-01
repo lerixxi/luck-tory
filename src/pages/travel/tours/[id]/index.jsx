@@ -1,6 +1,4 @@
-import { CurrentTours } from "@/components/pages/travel/currentTours/CurrentTours";
 import { tours } from "@/data/travelPage/tours";
-import { Hero } from "@/components/pages/travel/hero/Hero";
 import { TourDetailsPage } from "@/components/pages/travel/tours/TourDetailsPage/TourDetailsPage";
 
 const TourDetailsPageServer = ({ tour }) => {

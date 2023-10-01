@@ -1,10 +1,14 @@
+import { Hero } from "@/components/common/hero/Hero";
 import { CurrentTours } from "@/components/pages/travel/currentTours/CurrentTours";
-import { Hero } from "@/components/pages/travel/hero/Hero";
 
 const ToursPage = () => {
   return (
     <>
-      <Hero urlImage="/images/tours/testTour_1/hero.jpg" />
+      <Hero
+        background="/images/photosPage/toursPage/hero.jpg"
+        title="Життя – це подорожі,"
+        description="Подорожі – ось це життя!"
+      />
       <CurrentTours />
     </>
   );

@@ -13,6 +13,8 @@ export const tours = [
       width: 1920,
       height: 1280,
       alt: "photo",
+      title: "Життя – це подорожі,",
+      subtitle: "Подорожі – ось це життя!",
     },
     details: {
       quote: "Lorem ipsum dolor sit amet consectetur",
@@ -158,6 +160,7 @@ export const tours = [
       },
     },
   },
+
   {
     id: 2,
     name: "Tour 2",
@@ -172,6 +175,8 @@ export const tours = [
       width: 1920,
       height: 1280,
       alt: "photo",
+      title: "Життя – це подорожі,",
+      subtitle: "Подорожі – ось це життя!",
     },
     details: {
       quote: "Lorem ipsum dolor sit amet consectetur",
@@ -317,6 +322,7 @@ export const tours = [
       },
     },
   },
+
   {
     id: 3,
     name: "Tour 3",
@@ -331,6 +337,8 @@ export const tours = [
       width: 1920,
       height: 1280,
       alt: "photo",
+      title: "Життя – це подорожі,",
+      subtitle: "Подорожі – ось це життя!",
     },
     details: {
       quote: "Lorem ipsum dolor sit amet consectetur",
@@ -476,6 +484,7 @@ export const tours = [
       },
     },
   },
+
   {
     id: 4,
     name: "Tour 4",
@@ -490,6 +499,8 @@ export const tours = [
       width: 1920,
       height: 1280,
       alt: "photo",
+      title: "Життя – це подорожі,",
+      subtitle: "Подорожі – ось це життя!",
     },
     details: {
       quote: "Lorem ipsum dolor sit amet consectetur",
