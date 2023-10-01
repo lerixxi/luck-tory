@@ -2,113 +2,64 @@ const width = "1920";
 const height = "1280";
 
 export const photos = [
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A0374.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A1643.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A1868.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A2502.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A2557.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A2921.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A3210.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A4392.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A5286.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A5382.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A5497.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A7067.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A7867.jpg",
-		width: width,
-		height: height,
-	},
-
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A8716.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A8744.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A8921.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A9069.jpg",
-		width: width,
-		height: height,
-	},
-	{
-		alt: "Фотографія ",
-		src: "/images/photosPage/8S1A9575.jpg",
-		width: width,
-		height: height,
-	},
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/1.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/2.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/3.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/4.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/5.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/6.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/7.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/8.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/9.jpg",
+    width: width,
+    height: height,
+  },
+  {
+    alt: "Фотографія ",
+    src: "/images/photosPage/sliderPhotos/10.jpg",
+    width: width,
+    height: height,
+  },
 ];

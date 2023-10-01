@@ -3,22 +3,21 @@
    background-size: cover;
    height: 100vh;
    padding: 0 100px;
-   @include flex(center, center);
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
    flex-direction: column;
    color: #fff;
-   // дополнительные стили
 
 
    h1 {
-      // стили для заголовка
-
+      max-width: 800px;
       font-size: 50px;
-      text-align: center;
    }
 
    h2 {
+      margin-top: 20px;
+      max-width: 700px;
       font-size: 30px;
-      text-align: center;
-
    }
 }
