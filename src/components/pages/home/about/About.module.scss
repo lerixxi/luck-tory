@@ -9,17 +9,18 @@
    .list {
       @include flex(center, center);
       flex-direction: column-reverse;
-      gap: 20px;
+      gap: 36px;
+      text-align: center;
+
 
       @include media("md-tablet") {
          flex-direction: row;
-         align-items: start;
+         align-items: center;
+         text-align: start;
       }
    }
 
    .video {
-      width: 250px;
-      height: 350px;
       border-radius: 20px;
       overflow: hidden;
       box-shadow: $box-shadow;

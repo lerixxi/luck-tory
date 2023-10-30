@@ -6,8 +6,10 @@ export const Hero = ({ background, title, description }) => {
   };
   return (
     <section className={styles.hero} style={heroStyles}>
-      <h1>{title}</h1>
-      <h2>{description}</h2>
+      <div className="container">
+        <h1>{title}</h1>
+        <h2>{description}</h2>
+      </div>
     </section>
   );
 };

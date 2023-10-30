@@ -2,13 +2,11 @@
    padding: 0 30px;
    height: 100vh;
    @include flex(center, center);
-
    background: linear-gradient(rgba(207, 207, 207, 0.411),
          rgba(0, 0, 0, 0.288)), url('/images/homePage/hero.webp');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-
    color: $secondary-text-color;
 
    @include media('tablet') {
@@ -61,11 +59,8 @@
       @include btn();
       letter-spacing: 1.5px;
       color: $secondary-text-color;
-      // background-color: $primary-accent-color;
-
-
+      cursor: pointer;
       border: 1px solid white;
-
 
       &:hover,
       &:focus {

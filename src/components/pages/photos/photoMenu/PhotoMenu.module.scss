@@ -34,22 +34,19 @@
       }
 
       img {
-         width: 50%;
+         width: 100%;
          height: auto;
          border-radius: 10px;
 
          @include media('md-tablet') {
-            width: 90%;
+            width: 100%;
          }
       }
 
       .descriptionBox {
          flex-grow: 2;
-         width: 50%;
-
-         @include media('md-tablet') {
-            width: 90%;
-         }
+         width: 100%;
+         text-align: center;
 
          h3 {
             margin-bottom: 20px;
@@ -60,7 +57,7 @@
       a {
          @include btn();
 
-         width: 90%;
+         width: 100%;
          color: $primary-bg-color;
          background-color: $secondary-accent-color;
 

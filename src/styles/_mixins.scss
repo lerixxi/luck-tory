@@ -116,19 +116,10 @@
 //--------- --------- для размеров основного текста
 
 @mixin text() {
-   font-size: 16px;
-
-   // @include media('sm-mobile') {
-   //    font-size: 18px;
-   // }
-
-
-   // @include media("xl-desktop") {
-   //    font-size: 18px;
-   // }
+   font-size: 20px;
 
    @include media("xxl-desktop") {
-      font-size: 18px;
+      font-size: 22px;
    }
 }
 

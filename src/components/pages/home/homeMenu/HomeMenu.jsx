@@ -1,14 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Montserrat } from "next/font/google";
 import { menu } from "@/data/homePage/menu";
 import styles from "./HomeMenu.module.scss";
-
-export const montserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const HomeMenu = () => {
   return (
@@ -27,7 +20,7 @@ export const HomeMenu = () => {
               />
               <div>
                 <h3>{info.title}</h3>
-                <p className={` ${montserrat.className}`}>{info.description}</p>
+                <p>{info.description}</p>
               </div>
 
               <Link href={info.href}>{info.linkText}</Link>

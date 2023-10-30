@@ -122,22 +122,6 @@ button {
   width: 100%;
   max-width: $sm-tablet;
 
-
-  // @media screen and (min-width: $md-tablet) {
-  //   padding: 0px 24px;
-  //   max-width: $md-tablet;
-  // }
-
-  // @media screen and (min-width: $xl-desktop) {
-  //   padding: 0px 30px;
-  //   max-width: $xl-desktop;
-  // }
-
-  // @media screen and (min-width: $xxl-desktop) {
-  //   padding: 0px 40px;
-  //   max-width: $xxl-desktop;
-  // }
-
   @include media("md-tablet") {
     padding: 0px 24px;
     max-width: $md-tablet;
@@ -163,4 +147,8 @@ img {
 
 .slick-list * {
   outline: none;
+}
+
+p {
+  @include text();
 }

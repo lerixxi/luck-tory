@@ -1,13 +1,11 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { testimonials } from "@/data/homePage/testimonials";
-import { MdArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "./TestimonialGallery.module.scss";
 import Slider from "react-slick";
 import { NextArrow } from "@/components/common/arrowsSlick/NextArrow";
 import { PrevArrow } from "@/components/common/arrowsSlick/PrevArrow";
+import styles from "./TestimonialGallery.module.scss";
 
 export const TestimonialGallery = () => {
   const settings = {
@@ -22,6 +20,25 @@ export const TestimonialGallery = () => {
     pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 4,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
   };
 
   return (

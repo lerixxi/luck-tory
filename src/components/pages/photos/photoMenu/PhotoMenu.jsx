@@ -1,15 +1,8 @@
 import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-import { Montserrat } from "next/font/google";
 import { menu } from "@/data/photosPage/menu";
 import styles from "./PhotoMenu.module.scss";
-
-export const montserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const PhotoMenu = () => {
   return (
@@ -27,7 +20,7 @@ export const PhotoMenu = () => {
                 sizes="(max-width: 768px) 90vw, 40vw"
               />
               <div className={styles.descriptionBox}>
-                <p className={` ${montserrat.className}`}>{description}</p>
+                <p>{description}</p>
               </div>
 
               <Link href={href}>{linkText}</Link>
