@@ -9,7 +9,9 @@
    font-size: 14px;
    color: $primary-accent-color;
    border-radius: 4px;
-
+   display: flex;
+   align-items: center;
+   justify-content: center;
    transition: $transition;
 
    @include media('sm-mobile') {
@@ -24,9 +26,6 @@
 
    @include media('md-tablet') {
       padding: 10px 15px;
-   }
-
-   @include media('xl-desktop') {
       font-size: 20px;
    }
 
@@ -34,8 +33,7 @@
       font-size: 24px;
    }
 
-   &:hover,
-   &:focus {
+   &:hover {
       background-color: $primary-accent-color;
       color: $secondary-text-color;
    }

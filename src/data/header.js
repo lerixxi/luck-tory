@@ -1,22 +1,22 @@
 export const navbar = [
-	{
-		title: "Home",
-		path: "/",
-	},
-	{
-		title: "Photo",
-		path: "/photos",
-	},
-	{
-		title: "Travel",
-		path: "/travel",
-	},
-	{
-		title: "Psychology",
-		path: "/psychology",
-	},
-	{
-		title: "Contacts",
-		path: "#footer",
-	},
+  {
+    title: "Головна",
+    path: "/",
+  },
+  {
+    title: "Фото",
+    path: "/photos",
+  },
+  {
+    title: "Тури",
+    path: "/travel",
+  },
+  {
+    title: "Психологія",
+    path: "/psychology",
+  },
+  {
+    title: "Контакти",
+    path: "#footer",
+  },
 ];

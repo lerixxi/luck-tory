@@ -120,11 +120,11 @@ button {
   margin: 0px auto;
   padding: 0px 15px;
   width: 100%;
-  max-width: $sm-tablet;
+  // max-width: $sm-tablet;
 
   @include media("md-tablet") {
-    padding: 0px 24px;
-    max-width: $md-tablet;
+    padding: 0px 32px;
+    // max-width: $md-tablet;
   }
 
   @include media("xl-desktop") {

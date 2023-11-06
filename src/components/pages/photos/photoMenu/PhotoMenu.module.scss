@@ -10,14 +10,17 @@
       }
 
       ul {
+         margin: 0 auto;
          @include flex(center, center);
          flex-direction: column;
          gap: 50px;
+         max-width: 500px;
 
          @include media('md-tablet') {
             flex-direction: row;
             align-items: stretch;
             gap: 20px;
+            max-width: 100%;
          }
       }
 

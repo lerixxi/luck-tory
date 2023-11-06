@@ -1,4 +1,3 @@
-import cn from "classnames";
 import React from "react";
 import { PhotoPreviewSection } from "@/components/common/PhotoPreviewSection/PhotoPreviewSection";
 import { inspirationPhotos } from "@/data/photosPage/collectionPhoto";

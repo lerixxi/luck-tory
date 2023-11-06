@@ -6,6 +6,7 @@
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
     cursor: pointer;
     transition: all 0.15s ease-in-out;
+    margin: 0 auto;
 
     h4 {
         margin: 0;
@@ -25,9 +26,8 @@
     }
 
     &__big {
-        height: 250px;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
         margin-bottom: 15px;
     }
 
@@ -38,7 +38,6 @@
 
     &__mini {
         width: 31%;
-        height: 80px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 }

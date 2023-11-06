@@ -24,7 +24,6 @@
     h1 {
         margin-bottom: 20px;
         font-size: 36px;
-        // font-weight: 400;
         text-transform: uppercase;
 
         @include media('sm-mobile') {
@@ -38,14 +37,6 @@
         @include media("md-tablet") {
             font-size: 50px;
         }
-
-        // @include media("xl-desktop") {
-        //    font-size: 81px;
-        // }
-
-        // @include media("xxl-desktop") {
-        //    font-size: 86px;
-        // }
     }
 
     h2 {
@@ -57,5 +48,9 @@
 }
 
 .photoSection {
-    padding: 50px;
+    padding: 50px 0 0 0;
+
+    @include media("md-tablet") {
+        padding: 50px 0;
+    }
 }
