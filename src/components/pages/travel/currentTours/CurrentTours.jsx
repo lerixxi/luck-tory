@@ -29,9 +29,15 @@ export const CurrentTours = () => {
                       <h3>{tour.name}</h3>
                       <p>{tour.subtitle}</p>
                       <div>
-                        <p>Початок: {tour.dateStart}</p>
-                        <p>Закінчення: {tour.dateEnd}</p>
-                        <p>Вартість: {tour.price}$</p>
+                        <p>
+                          <b>Початок:</b> <span>{tour.dateStart}</span>
+                        </p>
+                        <p>
+                          <b>Закінчення:</b> <span>{tour.dateEnd}</span>
+                        </p>
+                        <p>
+                          <b>Вартість:</b> <span>{tour.price}$</span>
+                        </p>
                       </div>
                     </div>
 
@@ -62,7 +68,9 @@ export const CurrentTours = () => {
                       <h3>{tour.name}</h3>
                       <p>{tour.subtitle}</p>
                       <div>
-                        <p>Закінчився: {tour.dateEnd}</p>
+                        <p>
+                          <b>Закінчився:</b> <span>{tour.dateEnd}</span>
+                        </p>
                       </div>
                     </div>
 

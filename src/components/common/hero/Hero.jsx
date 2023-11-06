@@ -8,7 +8,9 @@ export const Hero = ({ background, title, description }) => {
     <section className={styles.hero} style={heroStyles}>
       <div className="container">
         <h1>{title}</h1>
-        <h2>{description}</h2>
+        <h2>
+          <i>{description}</i>
+        </h2>
       </div>
     </section>
   );
