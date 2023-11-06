@@ -15,17 +15,17 @@
    transition: $transition;
 
    @include media('sm-mobile') {
-      padding: 7px;
+      padding: 5px 7px;
       font-size: 16px;
    }
 
    @include media('sm-tablet') {
-      padding: 10px;
+      padding: 5px 10px;
       font-size: 18px;
    }
 
    @include media('md-tablet') {
-      padding: 10px 15px;
+      padding: 5px 15px;
       font-size: 20px;
    }
 
